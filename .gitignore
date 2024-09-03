@@ -1,7 +1,3 @@
-backend-session/node_modules
-backend-session/.env.production
-backend-session/.env
-
 backend-jwt/node_modules
 backend-jwt/.env.production
 backend-jwt/.env
