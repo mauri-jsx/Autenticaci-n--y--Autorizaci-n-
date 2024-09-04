@@ -24,7 +24,14 @@ const loadRegisterPage = () => {
                 body: JSON.stringify({ username, password }),
             });
             const data = await response.json();
-            Swal.fire('Registro', data.message, response.ok ? 'success' : 'error');
+
+            if (response.ok) {
+                Swal.fire('Registro Exitoso', data.message, 'success').then(() => {
+                    window.location.hash = '/login';
+                });
+            } else {
+                Swal.fire('Error', data.message, 'error');
+            }
         } catch (error) {
             Swal.fire('Error', 'Ocurrió un error durante el registro', 'error');
         }

@@ -1,4 +1,3 @@
-// pages/LoginPages.js
 import Swal from 'sweetalert2';
 import { setCurrentUser } from '../main.js';
 

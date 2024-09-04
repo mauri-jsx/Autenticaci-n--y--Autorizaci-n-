@@ -1,4 +1,3 @@
-// pages/LogoutPages.js
 import Swal from 'sweetalert2';
 import { clearCurrentUser } from '../main.js';
 

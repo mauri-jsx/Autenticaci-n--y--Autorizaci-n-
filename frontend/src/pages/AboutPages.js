@@ -1,5 +1,3 @@
-// pages/AboutPages.js
-
 const loadAboutPage = () => {
     document.getElementById('app').innerHTML = `
         <div class="bg-white p-6 rounded shadow-md">
