@@ -1,12 +1,14 @@
+// router.js
 import loadRegisterPage from './pages/RegistroPages.js';
 import loadLoginPage from './pages/LoginPages.js';
+import loadLogoutPage from './pages/LogoutPages.js';
 import loadAboutPage from './pages/AboutPages.js';
-
 
 const routes = {
     '/register': loadRegisterPage,
     '/login': loadLoginPage,
-    "/about": loadAboutPage
+    '/logout': loadLogoutPage,
+    '/about': loadAboutPage,
 };
 
 
@@ -18,9 +20,9 @@ export const initRouter = () => {
 };
 
 const navigateTo = (path) => {
-    const page = routes[path];
-    if (page) {
-        page();
+    const pages = routes[path];
+    if (pages) {
+        pages();
     } else {
         document.getElementById('app').innerHTML = '<p class="text-red-500">Página no encontrada</p>';
     }

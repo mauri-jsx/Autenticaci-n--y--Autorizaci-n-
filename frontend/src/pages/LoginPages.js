@@ -1,5 +1,6 @@
 // pages/LoginPages.js
 import Swal from 'sweetalert2';
+import { setCurrentUser } from '../main.js';
 
 const loadLoginPage = () => {
     document.getElementById('app').innerHTML = `
@@ -28,6 +29,7 @@ const loadLoginPage = () => {
             const data = await response.json();
 
             if (response.ok) {
+                setCurrentUser(username);
                 Swal.fire('Inicio de Sesión', data.message, 'success').then(() => {
                     window.location.hash = '/about';
                 });
