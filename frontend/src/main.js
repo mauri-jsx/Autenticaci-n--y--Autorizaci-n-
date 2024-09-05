@@ -12,39 +12,41 @@ export const updateGreeting = () => {
     }
 };
 
-
-const showLogoutLink = () => {
+const showLogoutButton = () => {
     const navLinks = document.getElementById('navLinks');
-    if (!document.getElementById('logoutLink')) {
-        const logoutLink = document.createElement('a');
-        logoutLink.id = 'logoutLink';
-        logoutLink.href = '#/logout';
-        logoutLink.className = 'text-blue-500 hover:underline';
-        logoutLink.textContent = 'Logout';
-        navLinks.appendChild(logoutLink);
+    if (!document.getElementById('logoutButton')) {
+        const logoutButton = document.createElement('button');
+        logoutButton.id = 'logoutButton';
+        // Aplicando clases de Tailwind CSS para estilo y transición
+        logoutButton.className = 'bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600 transition duration-300 shadow-md';
+        logoutButton.textContent = 'Cerrar Sesión';
+        logoutButton.onclick = () => {
+            window.location.hash = '/logout'; // Redirige a la página de logout
+        };
+        navLinks.appendChild(logoutButton);
     }
 };
 
 
-const hideLogoutLink = () => {
-    const logoutLink = document.getElementById('logoutLink');
-    if (logoutLink) {
-        logoutLink.remove();
+const hideLogoutButton = () => {
+    const logoutButton = document.getElementById('logoutButton');
+    if (logoutButton) {
+        logoutButton.remove();
     }
 };
 
 export const setCurrentUser = (username) => {
     currentUser = username;
-    setLoginStatus(true);
+    setLoginStatus(true); // Marca al usuario como logueado
     updateGreeting();
-    showLogoutLink();
+    showLogoutButton(); // Muestra el botón de "Cerrar Sesión"
 };
 
 export const clearCurrentUser = () => {
     currentUser = null;
     setLoginStatus(false);
     updateGreeting();
-    hideLogoutLink();
+    hideLogoutButton();
 };
 
 initRouter();

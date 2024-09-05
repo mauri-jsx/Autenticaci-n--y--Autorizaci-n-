@@ -11,9 +11,19 @@
   >
     <header class="mb-6">
       <nav id="navLinks" class="flex gap-4">
-        <a href="#/register" class="text-blue-500 hover:underline">Registro</a>
-        <a href="#/login" class="text-blue-500 hover:underline">Login</a>
-        <!-- El enlace de Logout será añadido dinámicamente -->
+        <button
+          onclick="window.location.hash = '#/register'"
+          class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300 shadow-md"
+        >
+          Registro
+        </button>
+        <button
+          onclick="window.location.hash = '#/login'"
+          class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600 transition duration-300 shadow-md"
+        >
+          Login
+        </button>
+        <!-- El botón de Cerrar Sesión será añadido dinámicamente por JavaScript -->
       </nav>
       <p id="userGreeting" class="mt-4 text-lg text-gray-700"></p>
       <!-- Contenedor para el nombre del usuario -->
