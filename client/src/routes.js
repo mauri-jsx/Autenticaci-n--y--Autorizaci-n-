@@ -1,6 +1,13 @@
+<<<<<<< HEAD:frontend/src/routes.js
 import loadRegisterPage from './pages/RegistroPages.js';
 import loadLoginPage from './pages/LoginPages.js';
 import loadLogoutPage from './pages/LogoutPages.js';
+=======
+// router.js
+import loadRegisterPage from './pages/RegisterPages.js';
+import loadLoginPage from './pages/LoginPages.js';
+import loadLogoutPage from './pages/LogaoutPages.js';
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818:client/src/routes.js
 import loadAboutPage from './pages/AboutPages.js';
 import Swal from 'sweetalert2';
 

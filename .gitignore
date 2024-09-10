@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 backend-session/node_modules
 backend-session/.env.production
 backend-session/.env
+=======
+backend-jwt/node_modules
+backend-jwt/.env.production
+backend-jwt/.env
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818
 
 backend-session/package-lock.json
 

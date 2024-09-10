@@ -1,3 +1,7 @@
+<<<<<<< HEAD:frontend/src/pages/LoginPages.js
+=======
+// pages/LoginPages.js
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818:client/src/pages/LoginPages.js
 import Swal from 'sweetalert2';
 import { setCurrentUser } from '../main.js';
 
@@ -25,6 +29,10 @@ const loadLoginPage = () => {
                 body: JSON.stringify({ username, password }),
                 credentials: 'include',
             });
+<<<<<<< HEAD:frontend/src/pages/LoginPages.js
+=======
+
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818:client/src/pages/LoginPages.js
             const data = await response.json();
 
             if (response.ok) {

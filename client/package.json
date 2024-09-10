@@ -1,0 +1,32 @@
+{
+<<<<<<< HEAD:frontend/package.json
+  "name": "frontend",
+=======
+  "name": "client",
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818:client/package.json
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+<<<<<<< HEAD:frontend/package.json
+    "postcss": "^8.4.44",
+=======
+    "postcss": "^8.4.45",
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818:client/package.json
+    "tailwindcss": "^3.4.10",
+    "vite": "^5.4.1"
+  },
+  "dependencies": {
+<<<<<<< HEAD:frontend/package.json
+    "sweetalert2": "^11.13.1"
+=======
+    "sweetalert2": "^11.13.2"
+>>>>>>> f0d762672f7e301ad14ba0f2cdbcd4a953d6d818:client/package.json
+  }
+}
